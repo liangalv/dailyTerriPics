@@ -24,7 +24,7 @@ while (True):
                                 )
         
         print("Pic Number: " + str(total_pics))
-        time.sleep(600)
+        time.sleep(86400)
 
 # message = client.messages.create(
 #     to="+16476066782", 
