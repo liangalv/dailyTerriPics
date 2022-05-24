@@ -20,7 +20,7 @@ while (True):
         message = client.messages.create(from_=keys.twilio_number,  
                                     body='Here is your Daily Terri Pic!' + " (" + "We've sent: " + str(total_pics) + ")",
                                     media_url= url,      
-                                    to=keys.Allison
+                                    to=[keys.Phoebe, keys.Allison]
                                 )
         
         print("Pic Number: " + str(total_pics))
