@@ -21,14 +21,14 @@ while (True):
         total_pics += 1
         if day: 
             message = client.messages.create(from_=keys.twilio_number,  
-                                        body='Jo Sun, 美妞!' + " (" + "I've spent: " + "$"+ str(total_pics*2*0.1) + " in total)",
+                                        body='Jo Sun! ' + " (" + "I've spent: " + "$"+ str(total_pics*2*0.1) + " in total)",
                                         media_url= url,      
                                         to=[keys.Phoebe,keys.Allison]
                                     )
             day = False 
         else:
             message = client.messages.create(from_=keys.twilio_number,  
-                                        body='Good Night, you did a good job today, I\m proud of you' + " (" + "I've spent: " +"$"+  str(total_pics*2*0.1) + ")",
+                                        body='Good Night' + " (" + "I've spent: " +"$"+  str(total_pics*2*0.1) + ")",
                                         media_url= url,      
                                         to=[keys.Phoebe,keys.Allison]
                                     )
